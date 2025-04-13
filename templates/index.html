@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BunkieBliss</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="image/png">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <h1 class="logo">BunkieBliss</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#cta">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-in">
+    <div class="container">
+      <h2>Make Relocation Blissful</h2>
+      <p>
+        Find homes, flatmates, and new opportunities with BunkieBliss — your smart relocation partner.
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9KlR7eMYCqTECYnid0RVvqy-vIdYalpGicqkskmmuZucNFA/viewform?usp=header class="btn-primary">Book a Free Call</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="container two-column">
+      <div data-aos="fade-right">
+        <h3>Why BunkieBliss?</h3>
+        <p>
+          Moving to a new city shouldn’t feel like jumping into the unknown. We help you find a perfect home,
+          the right people, and even support your career moves.
+        </p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Relocation help" data-aos="fade-left" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section light">
+    <div class="container">
+      <h3 data-aos="fade-up">What We Offer</h3>
+
+      <div class="cards">
+        <div class="card" data-aos="zoom-in">
+          <h4>Flatmate Matching</h4>
+          <p>Find flatmates that vibe with you, not just share rent.</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <h4>Verified Listings</h4>
+          <p>Homes that feel safe, verified by us so you don’t get scammed.</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <h4>Career Support</h4>
+          <p>Workshops, mentors & career boosts to help you thrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="cta" class="cta" data-aos="fade-up">
+    <div class="container">
+      <h3>Ready to move stress-free?</h3>
+      <p>
+        Schedule a 1:1 call with our relocation expert. We’ll guide you step-by-step.
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9KlR7eMYCqTECYnid0RVvqy-vIdYalpGicqkskmmuZucNFA/viewform?usp=header" class="btn-primary">Book a Call</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2025 BunkieBliss ·
+        <a href="https://www.linkedin.com/company/bunkiebliss/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+</html>
